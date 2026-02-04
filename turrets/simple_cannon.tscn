@@ -8,4 +8,8 @@
 texture = ExtResource("1_brlmn")
 script = ExtResource("2_ddien")
 
+[node name="RocketSpawnPoint" type="Marker2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(56, 0)
+
 [node name="Mob" parent="." instance=ExtResource("3_mmbt5")]
