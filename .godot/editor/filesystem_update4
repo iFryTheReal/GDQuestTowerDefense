@@ -1,0 +1,5 @@
+res://mobs/mob.tscn
+res://turrets/weapons/waepon.gd
+res://turrets/weapons/weapon.gd
+res://turrets/simple_cannon.tscn
+res://turrets/simple_cannon.gd
