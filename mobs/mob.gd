@@ -28,3 +28,7 @@ func _die() -> void:
 
 func take_damage(amount: int) -> void:
 	health -= amount
+	var damage_indicator: Node2D = preload("uid://bq0ta0wigo4jt").instantiate()
+	get_tree().current_scene.add_child(damage_indicator)
+	damage_indicator.global_position = global_position
+	damage_indicator.display_amount(amount)
