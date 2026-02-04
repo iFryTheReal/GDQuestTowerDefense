@@ -1,15 +1,55 @@
-[gd_scene load_steps=3 format=3 uid="uid://bdtknw27u8ldw"]
+[gd_scene load_steps=6 format=3 uid="uid://bdtknw27u8ldw"]
 
 [ext_resource type="Texture2D" uid="uid://c06dsq2gfbcd8" path="res://mobs/mouse_01.png" id="1_bteyy"]
+[ext_resource type="Script" uid="uid://bc3dv0pj1vl3t" path="res://mobs/mob.gd" id="1_fgbma"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_fgbma"]
 radius = 44.0
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fgbma"]
+bg_color = Color(0.15686275, 0.078431375, 0.30588236, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p7hwu"]
+bg_color = Color(0.62352943, 0.8666667, 0.31764707, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
 [node name="Mob" type="Area2D"]
+script = ExtResource("1_fgbma")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_fgbma")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(-7, 0)
 texture = ExtResource("1_bteyy")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_fgbma")
+[node name="BarPivot" type="Node2D" parent="."]
+unique_name_in_owner = true
+
+[node name="HealthBar" type="ProgressBar" parent="BarPivot"]
+unique_name_in_owner = true
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.0
+offset_top = -75.0
+offset_right = 50.0
+offset_bottom = -60.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/background = SubResource("StyleBoxFlat_fgbma")
+theme_override_styles/fill = SubResource("StyleBoxFlat_p7hwu")
+step = 0.0
+value = 50.0
+show_percentage = false
