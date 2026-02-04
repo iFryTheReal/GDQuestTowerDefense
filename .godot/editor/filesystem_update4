@@ -3,3 +3,5 @@ res://turrets/weapons/waepon.gd
 res://turrets/weapons/weapon.gd
 res://turrets/simple_cannon.tscn
 res://turrets/simple_cannon.gd
+res://turrets/weapons/projectiles/simple_rocket.tscn
+res://turrets/weapons/projectiles/simple_rocket.gd
