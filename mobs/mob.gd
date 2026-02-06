@@ -12,6 +12,11 @@ var _tween: Tween = null
 func _ready() -> void:
 	_health_bar.max_value = health
 	set_health(health)
+	
+	area_entered.connect(
+		func(other_area: Area2D) -> void:
+			_die()
+	)
 
 func _physics_process(delta: float) -> void:
 	_bar_pivot.global_rotation = 0.0

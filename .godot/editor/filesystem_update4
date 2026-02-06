@@ -4,3 +4,6 @@ res://mobs/mob.tscn
 res://mobs/mob.gd
 res://mobs/mob_path_follow.gd
 res://mobs/mob_spawner.gd
+res://autoload/player_ui.tscn
+res://autoload/player_ui.gd
+res://tower_defense.gd

@@ -15,8 +15,13 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="M11. Tower Defense (Workbook)"
+run/main_scene="uid://dqvucroq0cuoa"
 config/features=PackedStringArray("4.5")
 config/icon="res://icon.png"
+
+[autoload]
+
+PlayerUI="*res://autoload/player_ui.tscn"
 
 [debug]
 
