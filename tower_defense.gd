@@ -9,7 +9,7 @@ func _ready() -> void:
 	)
 	
 	PlayerUI.health_depleted.connect(
-		func () -> void:
-			get_tree().reload_current_scene.call_deferred()
-			PlayerUI.player_health = 5
+		func() -> void:
+			get_tree().paused = true
+			PlayerUI.game_over.visible = true
 	)
