@@ -1,10 +1,6 @@
+res://tower_defense.tscn
+res://map/tileset.tres
 res://mobs/mob.tscn
-res://turrets/weapons/waepon.gd
-res://turrets/weapons/weapon.gd
-res://turrets/simple_cannon.tscn
-res://turrets/simple_cannon.gd
-res://turrets/weapons/projectiles/simple_rocket.tscn
-res://turrets/weapons/projectiles/simple_rocket.gd
 res://mobs/mob.gd
-res://mobs/damage_indicator.tscn
-res://mobs/damage_indicator.gd
+res://mobs/mob_path_follow.gd
+res://mobs/mob_spawner.gd

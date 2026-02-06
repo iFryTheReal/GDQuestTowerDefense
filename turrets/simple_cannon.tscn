@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://d2cw0j8e2gl4r"]
+[gd_scene load_steps=3 format=3 uid="uid://d2cw0j8e2gl4r"]
 
 [ext_resource type="Texture2D" uid="uid://cv328i4tw2cc1" path="res://turrets/weapons/simple_cannon.png" id="1_brlmn"]
 [ext_resource type="Script" uid="uid://byoy308rf528d" path="res://turrets/simple_cannon.gd" id="2_ddien"]
-[ext_resource type="PackedScene" uid="uid://bdtknw27u8ldw" path="res://mobs/mob.tscn" id="3_mmbt5"]
 
 [node name="SimpleCannon" type="Sprite2D"]
 texture = ExtResource("1_brlmn")
@@ -11,5 +10,3 @@ script = ExtResource("2_ddien")
 [node name="RocketSpawnPoint" type="Marker2D" parent="."]
 unique_name_in_owner = true
 position = Vector2(56, 0)
-
-[node name="Mob" parent="." instance=ExtResource("3_mmbt5")]
